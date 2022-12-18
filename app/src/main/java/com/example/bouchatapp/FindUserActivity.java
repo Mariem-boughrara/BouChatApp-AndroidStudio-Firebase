@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -84,8 +84,8 @@ public class FindUserActivity extends AppCompatActivity {
 
         Cursor phones = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null, null, null);
         while(phones.moveToNext()){
-            String name = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
-            String phone = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+            String name = phones.getString(phones.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+            String phone = phones.getString(phones.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.NUMBER));
 
             phone = phone.replace(" ", "");
             phone = phone.replace("-", "");
@@ -156,7 +156,7 @@ public class FindUserActivity extends AppCompatActivity {
         mUserList= findViewById(R.id.userList);
         mUserList.setNestedScrollingEnabled(false);
         mUserList.setHasFixedSize(false);
-        mUserListLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayout.VERTICAL, false);
+        mUserListLayoutManager = new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false);
         mUserList.setLayoutManager(mUserListLayoutManager);
         mUserListAdapter = new UserListAdapter(userList);
         mUserList.setAdapter(mUserListAdapter);
