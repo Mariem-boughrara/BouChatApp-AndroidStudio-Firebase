@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "500382241208",
+    "firebase_url": "https://bouchatapp-default-rtdb.firebaseio.com",
+    "project_id": "bouchatapp",
+    "storage_bucket": "bouchatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500382241208:android:a920bee83a2e7a3c2d3f4d",
+        "android_client_info": {
+          "package_name": "com.bouchatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500382241208-ss3eh1nimju7pjj328beg0o15b61koeb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bouchatapp",
+            "certificate_hash": "d9157e65269e46ee0ec19243dcceb1ce029acb01"
+          }
+        },
+        {
+          "client_id": "500382241208-ncb294qdt1v1ih57v4oigag29hoq90m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDML8JvBD0aYaRtb5yScOeqMv4L9Dot9Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500382241208-ncb294qdt1v1ih57v4oigag29hoq90m0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
