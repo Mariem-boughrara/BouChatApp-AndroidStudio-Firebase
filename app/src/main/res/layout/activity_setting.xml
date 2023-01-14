@@ -28,27 +28,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Setting"
-            android:textSize="24sp"
             android:layout_gravity="center_horizontal"
-            />
+            android:text="Setting"
+            android:textColor="#F4EAEA"
+            android:textSize="24sp" />
 
 
     </androidx.appcompat.widget.Toolbar>
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Profile"
-        android:id="@+id/profile"
-        android:textSize="24sp"
-        android:padding="10dp"
-        android:layout_margin="10dp"
-
-        />
-
-<!--<androidx.appcompat.widget.SwitchCompat-->
+    <!--<androidx.appcompat.widget.SwitchCompat-->
 <!--    android:layout_width="match_parent"-->
 <!--    android:layout_height="wrap_content"-->
 <!--    android:id="@+id/toggle_darkmode"-->
@@ -58,16 +47,30 @@
 <!--    />-->
 
 
-
     <TextView
+        android:id="@+id/profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        android:id="@+id/logout"
-        android:textSize="24sp"
-        android:padding="10dp"
         android:layout_margin="10dp"
+        android:background="#FF0062B1"
+        android:padding="10dp"
+        android:text="Profile"
 
-        />
+        android:textAlignment="center"
+        android:textColor="#F4EAEA"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#0062B1"
+        android:padding="10dp"
+
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textColor="#FFF4EAEA"
+        android:textSize="24sp" />
 
 </LinearLayout>

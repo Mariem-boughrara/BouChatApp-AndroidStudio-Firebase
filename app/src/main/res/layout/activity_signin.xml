@@ -82,13 +82,13 @@
     >
 
     <Button
+        android:id="@+id/signin_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signin_btn"
-        android:text="Sign-in"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="10dp"
-        />
+        android:text="Sign-in"
+        android:textColor="#FFF4EAEA" />
 
 <!--    <Button-->
 <!--        android:id="@+id/google_signin_signinact"-->
