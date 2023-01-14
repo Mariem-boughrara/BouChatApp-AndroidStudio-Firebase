@@ -203,8 +203,22 @@
                 android:text="User Mail"
                 android:textSize="24sp" />
 
+
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="user id"
+            android:textColor="#F4EAEA"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 

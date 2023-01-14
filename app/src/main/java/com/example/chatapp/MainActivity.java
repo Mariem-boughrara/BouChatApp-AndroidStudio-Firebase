@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
 
-               Intent intent  = new Intent(MainActivity.this,SettingActivity.class);
-               startActivity(intent);
+                Intent intent  = new Intent(MainActivity.this,SettingActivity.class);
+                startActivity(intent);
 
                 return true;
             }
